@@ -57,6 +57,18 @@ function displayBlockedWords() {
             }
         }
     });
+
+    document.getElementById('reset-password').addEventListener('click', function() {
+        const newPassword = document.getElementById('new-password').value;
+    
+        // Set the new password
+        chrome.storage.sync.set({ 'password': newPassword }, function() {
+            document.getElementById('reset-status').textContent = 'Password has been reset!';
+            setTimeout(function() {
+                document.getElementById('reset-status').textContent = '';
+            }, 2000);
+        });
+    });
 }
 
 // Call displayBlockedWords when the popup is loaded

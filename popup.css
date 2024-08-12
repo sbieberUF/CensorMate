@@ -13,8 +13,8 @@ label {
     margin-top: 10px;
 }
 
-input[type="text"] {
-    width: 100%;
+input[type="text"], input[type="password"] {
+    width: 95.3%;
     padding: 5px;
     margin-top: 5px;
 }
@@ -28,6 +28,15 @@ button {
 #status {
     margin-top: 10px;
     color: green;
+}
+
+#reset-status {
+    margin-top: 10px;
+    color: green;
+}
+
+#error-message {
+    color: red;
 }
 
 

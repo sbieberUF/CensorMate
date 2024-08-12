@@ -8,7 +8,7 @@
       "service_worker": "background.js"
   },
   "action": {
-      "default_popup": "popup.html",
+      "default_popup": "password.html",
       "default_icon": {
           "16": "icons/icon16.png"
       }
