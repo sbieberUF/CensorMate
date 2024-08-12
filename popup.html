@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CensorMate</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h1>CensorMate</h1>
+    <form id="block-form">
+        <label for="words">Words to Block (comma-separated):</label>
+        <input type="text" id="words" name="words">
+        <label for="replacements">Replacement Words:</label>
+        <input type="text" id="replacements" name="replacements" value="[censored]">
+        <button type="submit">Save</button>
+    </form>
+    <h3>Currently Blocked Words:</h3>
+    <ul id="blocked-words-list"></ul>
+    <button id="clear-words">Clear Blocked Words</button>
+    <p id="status"></p>
+    <script src="popup.js"></script>
+</body>
+</html>
