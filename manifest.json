@@ -3,7 +3,7 @@
   "name": "CensorMate",
   "version": "1.0",
   "description": "Replaces user selected words on any webpage with a different word.",
-  "permissions": ["activeTab", "storage", "declarativeContent"],
+  "permissions": ["storage", "declarativeContent"],
   "background": {
       "service_worker": "background.js"
   },
